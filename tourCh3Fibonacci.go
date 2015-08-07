@@ -12,18 +12,17 @@ func fibonacci() func() int64 {
   b := int64(0)
 
   return func() int64 {
-  	fmt.Println("fib recur called")
     a, b = b, a+b
     return a
   }
 }
 
 func main() {
-  //note that "f" is essentially a function literal; local values in fibonacci are static
-  //for the duration of "f"
+  //note that "f" is essentially a function literal; local 
+  //values in fibonacci are static for the duration of "f"
   f := fibonacci()
 
-  for i:=0; i<10; i++ {
+  for i:=0; i<100; i++ {
     fmt.Println(f())
   }
 }
