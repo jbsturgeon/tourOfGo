@@ -19,6 +19,8 @@ func fibonacci() func() int64 {
 }
 
 func main() {
+  //note that "f" is essentially a function literal; local values in fibonacci are static
+  //for the duration of "f"
   f := fibonacci()
 
   for i:=0; i<10; i++ {
