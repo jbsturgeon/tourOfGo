@@ -38,5 +38,5 @@ func main() {
 	app, ex, iter = Sqrt(testNum)
 
 	fmt.Println("Approx Square root of ", testNum, " is: ", app, "(iter: ", iter, " )")
-	fmt.Println("Exact value is: ", ex)
+	fmt.Println("Exact Square root of  ", testNum, " is: ", ex)
 }
