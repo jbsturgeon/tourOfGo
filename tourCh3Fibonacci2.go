@@ -17,7 +17,7 @@ func fibonacci(x int64) int64 {
 }
 
 func main() {
-  for i:=0; i<60; i++ {
+  for i:=0; i<50; i++ {
     fmt.Println("i = ", i, " ", fibonacci(int64(i)))
   }
 }
