@@ -6,7 +6,8 @@ import (
   "net/http"
 )
 
-type Hello struct{}
+type Hello struct{
+}
 
 func(h Hello) ServeHTTP(
   w http.ResponseWriter,
