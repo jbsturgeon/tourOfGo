@@ -27,8 +27,10 @@ func(s Struct) ServeHTTP(w http.ResponseWriter, r *http.Request) {
  
 func main() {
   //your http.Handle calls here
+  //http://localhost:4000/string or http://localhost:4000/Struct
+
   http.Handle("/string", String("I'm a frayed knot."))
-  http.Handle("/struct", &Struct{"Hello", ":", "Gophers!"})
+  http.Handle("/Struct", &Struct{"Hello", ":", "Gophers!"})
 
   http.ListenAndServe("localhost:4000", nil)
 }
